@@ -29,4 +29,5 @@ export async function createTransaction(formData: FormData) {
   }
 
   revalidatePath("/");
+  revalidatePath("/relatorios");
 }

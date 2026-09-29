@@ -22,7 +22,7 @@ export default function TransactionForm() {
             Nova transação
           </h3>
 
-          <p className="mt-1 text-sm text-slate-500">
+          <p className="mt-1 text-sm text-slate-600">
             Registre uma nova movimentação financeira.
           </p>
 
@@ -30,9 +30,8 @@ export default function TransactionForm() {
             action={createTransaction}
             className="mt-6 space-y-5"
           >
-            {/* Descrição */}
             <div>
-              <label className="mb-2 block text-sm font-medium text-slate-700">
+              <label className="mb-2 block text-sm font-semibold text-slate-800">
                 Descrição
               </label>
 
@@ -41,13 +40,12 @@ export default function TransactionForm() {
                 name="description"
                 placeholder="Ex.: Salário, supermercado..."
                 required
-                className="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 outline-none transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"
+                className="w-full rounded-lg border border-slate-400 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-500 outline-none transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"
               />
             </div>
 
-            {/* Valor */}
             <div>
-              <label className="mb-2 block text-sm font-medium text-slate-700">
+              <label className="mb-2 block text-sm font-semibold text-slate-800">
                 Valor
               </label>
 
@@ -58,13 +56,12 @@ export default function TransactionForm() {
                 min="0.01"
                 placeholder="0,00"
                 required
-                className="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 outline-none transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"
+                className="w-full rounded-lg border border-slate-400 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-500 outline-none transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"
               />
             </div>
 
-            {/* Tipo */}
             <div>
-              <label className="mb-2 block text-sm font-medium text-slate-700">
+              <label className="mb-2 block text-sm font-semibold text-slate-800">
                 Tipo de movimentação
               </label>
 
@@ -78,7 +75,7 @@ export default function TransactionForm() {
                     className="peer sr-only"
                   />
 
-                  <div className="rounded-lg border border-slate-300 bg-white p-3 text-center font-medium transition peer-checked:border-emerald-500 peer-checked:bg-emerald-50 peer-checked:text-emerald-700">
+                  <div className="rounded-lg border border-slate-400 bg-white p-3 text-center font-semibold text-slate-800 transition peer-checked:border-emerald-500 peer-checked:bg-emerald-50 peer-checked:text-emerald-700">
                     Receita
                   </div>
                 </label>
@@ -91,17 +88,16 @@ export default function TransactionForm() {
                     className="peer sr-only"
                   />
 
-                  <div className="rounded-lg border border-slate-300 bg-white p-3 text-center font-medium transition peer-checked:border-red-500 peer-checked:bg-red-50 peer-checked:text-red-700">
+                  <div className="rounded-lg border border-slate-400 bg-white p-3 text-center font-semibold text-slate-800 transition peer-checked:border-red-500 peer-checked:bg-red-50 peer-checked:text-red-700">
                     Despesa
                   </div>
                 </label>
               </div>
             </div>
 
-            {/* Botão */}
             <button
               type="submit"
-              className="w-full rounded-lg bg-indigo-600 px-4 py-3 font-medium text-white transition hover:bg-indigo-700"
+              className="w-full rounded-lg bg-indigo-600 px-4 py-3 font-semibold text-white transition hover:bg-indigo-700"
             >
               Cadastrar transação
             </button>
