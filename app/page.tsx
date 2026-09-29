@@ -56,7 +56,7 @@ export default async function Home() {
 
           <div className="flex items-center justify-between md:block">
             <h1 className="text-xl font-bold md:text-2xl">
-              Finance Wallet
+              FinanDesk
             </h1>
           </div>
 
